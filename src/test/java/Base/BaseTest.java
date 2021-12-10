@@ -14,8 +14,6 @@ public class BaseTest {
     @Before
     public void setUp(){
         ChromeOptions options = new ChromeOptions();
-        options.setBrowserVersion("95");
-        options.setPlatformName("Windows");
         options.addArguments("--disable-notifications");
         options.addArguments("--start-fullscreen");
         WebDriverManager.chromedriver().setup();
