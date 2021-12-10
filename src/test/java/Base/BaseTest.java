@@ -17,7 +17,7 @@ public class BaseTest {
         options.addArguments("--disable-notifications");
         options.addArguments("--start-fullscreen");
         String path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path+"/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", path+"/driver/chromedriver");
         setDriver(new ChromeDriver(options));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
